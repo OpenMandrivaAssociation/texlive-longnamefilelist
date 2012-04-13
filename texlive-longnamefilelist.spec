@@ -1,11 +1,11 @@
-# revision 25658
+# revision 25820
 # category Package
 # catalog-ctan /macros/latex/contrib/longnamefilelist
-# catalog-date 2012-03-14 10:19:48 +0100
+# catalog-date 2012-04-01 20:39:12 +0200
 # catalog-license lppl1.3
-# catalog-version 0.1a
+# catalog-version 0.1c
 Name:		texlive-longnamefilelist
-Version:	0.1a
+Version:	0.1c
 Release:	1
 Summary:	Tidy \listfiles with long file names
 Group:		Publishing
@@ -42,7 +42,8 @@ explained in the documentation.
 %doc %{_texmfdistdir}/doc/latex/longnamefilelist/SrcFILEs.txt
 %doc %{_texmfdistdir}/doc/latex/longnamefilelist/longnamefilelist.pdf
 #- source
-%doc %{_texmfdistdir}/source/latex/longnamefilelist/lonaflst.tex
+%doc %{_texmfdistdir}/source/latex/longnamefilelist/longnamefilelist.tex
+%doc %{_texmfdistdir}/source/latex/longnamefilelist/srcfiles.tex
 
 #-----------------------------------------------------------------------
 %prep
