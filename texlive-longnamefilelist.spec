@@ -1,11 +1,11 @@
-# revision 27889
+# revision 25820
 # category Package
 # catalog-ctan /macros/latex/contrib/longnamefilelist
-# catalog-date 2012-10-01 08:11:57 +0200
+# catalog-date 2012-04-01 20:39:12 +0200
 # catalog-license lppl1.3
-# catalog-version 0.2
+# catalog-version 0.1c
 Name:		texlive-longnamefilelist
-Version:	0.2
+Version:	0.1c
 Release:	1
 Summary:	Tidy \listfiles with long file names
 Group:		Publishing
@@ -37,7 +37,7 @@ explained in the documentation.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/longnamefilelist/longnamefilelist.sty
+%{_texmfdistdir}/tex/latex/longnamefilelist/lonaflst.sty
 %doc %{_texmfdistdir}/doc/latex/longnamefilelist/README
 %doc %{_texmfdistdir}/doc/latex/longnamefilelist/SrcFILEs.txt
 %doc %{_texmfdistdir}/doc/latex/longnamefilelist/longnamefilelist.pdf
@@ -54,3 +54,15 @@ explained in the documentation.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Fri Apr 13 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.1c-1
++ Revision: 790647
+- Update to latest release.
+
+* Tue Mar 27 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.1a-1
++ Revision: 787684
+- Import texlive-longnamefilelist
+- Import texlive-longnamefilelist
+
