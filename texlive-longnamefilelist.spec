@@ -1,19 +1,13 @@
-# revision 27889
-# category Package
-# catalog-ctan /macros/latex/contrib/longnamefilelist
-# catalog-date 2012-10-01 08:11:57 +0200
-# catalog-license lppl1.3
-# catalog-version 0.2
 Name:		texlive-longnamefilelist
-Version:	0.2
-Release:	10
+Version:	27889
+Release:	1
 Summary:	Tidy \listfiles with long file names
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/longnamefilelist
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/longnamefilelist.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/longnamefilelist.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/longnamefilelist.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/longnamefilelist.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/longnamefilelist.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/longnamefilelist.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -28,12 +22,12 @@ The package can be combined with the myfilist package as
 explained in the documentation.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -47,26 +41,11 @@ explained in the documentation.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Mon Oct 29 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.2-1
-+ Revision: 820616
-- Update to latest release.
-
-* Fri Apr 13 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.1c-1
-+ Revision: 790647
-- Update to latest release.
-
-* Tue Mar 27 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.1a-1
-+ Revision: 787684
-- Import texlive-longnamefilelist
-- Import texlive-longnamefilelist
-
