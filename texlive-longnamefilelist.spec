@@ -1,6 +1,6 @@
 Name:		texlive-longnamefilelist
 Version:	27889
-Release:	1
+Release:	2
 Summary:	Tidy \listfiles with long file names
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/longnamefilelist
