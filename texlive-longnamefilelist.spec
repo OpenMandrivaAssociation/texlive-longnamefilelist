@@ -3,7 +3,7 @@ Version:	27889
 Release:	2
 Summary:	Tidy \listfiles with long file names
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/longnamefilelist
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/longnamefilelist
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/longnamefilelist.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/longnamefilelist.doc.r%{version}.tar.xz
